@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "mysql-snakegame-ezshibin-snakegame.a.aivencloud.com",
+            "port": 25185,
+            "driver": "MySQL",
+            "name": "snakeDB",
+            "database": "defaultdb",
+            "username": "avnadmin"
+        }
+    ]
+}

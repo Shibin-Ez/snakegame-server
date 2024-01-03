@@ -31,7 +31,7 @@ const findRank = async (score) => {
     const [records] = await pool.query(
       "SELECT * FROM records ORDER BY score DESC, time ASC"
     );
-    const rank = records.findIndex((record) => record.score === score);
+    const rank = records.findIndex((record) => record.score <= score);
     if (rank === -1) return records.length;
     return rank + 1;
   } catch (err) {
